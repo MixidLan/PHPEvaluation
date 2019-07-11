@@ -1,0 +1,37 @@
+original  required code
+
+
+    if (empty($_POST["title"])) {
+        $titleErr = "Title is required";
+    }
+    if (empty($_POST["address"])) {
+        $addressErr = "Adress is required";
+    }
+    if (empty($_POST["city"])) {
+        $cityErr = "City is required";
+    }
+    if (empty($_POST["pc"])) {
+        $pcErr = "Postal Code is required";
+    }
+    if (empty($_POST["area"])) {
+        $areaErr = "Area is required";
+    }
+    if (empty($_POST["price"])) {
+        $priceErr = "Price is required";
+    }
+    if (empty($_POST["type"])) {
+        $typeErr = "Type is required";
+    }
+
+
+    alternative already used in index.php
+
+
+        if (empty($_POST["title"] && $_POST["address"] && $_POST["city"] && $_POST["pc"] && $_POST["area"] && $_POST["price"] && $_POST["type"])) {
+        $titleErr = "Title is required";
+        $addressErr = "Adress is required";
+        $cityErr = "City is required";
+        $pcErr = "Postal Code is required";
+        $areaErr = "Area is required";
+        $priceErr = "Price is required";
+        $typeErr = "Type is required";
